@@ -1,0 +1,17 @@
+# Alternative / reproducible way to run Postgres (e.g. for your committee).
+# Requires Docker. If you installed Postgres natively via Homebrew you don't
+# need this file.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: calendar
+      POSTGRES_PASSWORD: calendar
+      POSTGRES_DB: calendar
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

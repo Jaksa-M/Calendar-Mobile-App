@@ -1,0 +1,88 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# --- Added for cleanup / cross-platform (Windows + macOS) ---
+
+# Android — machine-specific paths & build cache
+/android/local.properties
+/android/.gradle/
+/android/app/.cxx/
+/android/.kotlin/
+/android/key.properties
+*.keystore
+*.jks
+
+# Secrets — never commit a real .env anywhere; keep the .example template
+.env
+*.env
+!*.env.example
+
+# Backend (Python) — in case anything runs from the repo root
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# iOS / macOS — machine-generated
+**/Flutter/flutter_export_environment.sh
+**/ios/Flutter/.last_build_id
+**/Pods/
+**/ios/Podfile.lock
+**/macos/Podfile.lock
+
+# Windows build target (if you run `flutter build windows` on the other PC)
+/windows/flutter/ephemeral/
+/linux/flutter/ephemeral/
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code (uncomment if you do NOT want to share launch configs)
+# .vscode/
